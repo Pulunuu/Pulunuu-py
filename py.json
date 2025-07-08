@@ -1,0 +1,35 @@
+{
+  "name": "my-project",
+  "description": "An AI-ready FastAPI backend",
+  "entry": "app.py",
+  "scripts": {
+    "dev": "pylock run app.py"
+  },
+  "dependencies": {
+    "fastapi": "^0.110.0",
+    "openai": "^1.12.0",
+    "llama-index": "*"
+  },
+  "models": {
+    "openai:gpt-4": {
+      "provider": "openai",
+      "id": "gpt-4",
+      "version": "4.0.0",
+      "context": "8k"
+    }
+  },
+  "env": {
+    "default": "dev",
+    "environments": {
+      "dev": {
+        "PYTHON_ENV": "development"
+      },
+      "prod": {
+        "PYTHON_ENV": "production"
+      }
+    }
+  },
+  "lock": {
+    "strict": true
+  }
+}
