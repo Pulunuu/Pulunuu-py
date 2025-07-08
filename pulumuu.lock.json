@@ -1,0 +1,179 @@
+{
+  "dependencies": {
+    "annotated-types": {
+      "version": "0.7.0",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/annotated-types/0.7.0/"
+    },
+    "anyio": {
+      "version": "4.9.0",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/anyio/4.9.0/"
+    },
+    "certifi": {
+      "version": "2025.6.15",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/certifi/2025.6.15/"
+    },
+    "click": {
+      "version": "8.2.1",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/click/8.2.1/"
+    },
+    "distro": {
+      "version": "1.9.0",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/distro/1.9.0/"
+    },
+    "fastapi": {
+      "version": "0.116.0",
+      "transitive": false,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/fastapi/0.116.0/"
+    },
+    "h11": {
+      "version": "0.16.0",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/h11/0.16.0/"
+    },
+    "httpcore": {
+      "version": "1.0.9",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/httpcore/1.0.9/"
+    },
+    "httpx": {
+      "version": "0.28.1",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/httpx/0.28.1/"
+    },
+    "idna": {
+      "version": "3.10",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/idna/3.10/"
+    },
+    "jiter": {
+      "version": "0.10.0",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/jiter/0.10.0/"
+    },
+    "markdown-it-py": {
+      "version": "3.0.0",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/markdown-it-py/3.0.0/"
+    },
+    "mdurl": {
+      "version": "0.1.2",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/mdurl/0.1.2/"
+    },
+    "openai": {
+      "version": "1.93.1",
+      "transitive": false,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/openai/1.93.1/"
+    },
+    "pydantic": {
+      "version": "2.11.7",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/pydantic/2.11.7/"
+    },
+    "pydantic_core": {
+      "version": "2.33.2",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/pydantic_core/2.33.2/"
+    },
+    "Pygments": {
+      "version": "2.19.2",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/Pygments/2.19.2/"
+    },
+    "rich": {
+      "version": "14.0.0",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/rich/14.0.0/"
+    },
+    "shellingham": {
+      "version": "1.5.4",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/shellingham/1.5.4/"
+    },
+    "sniffio": {
+      "version": "1.3.1",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/sniffio/1.3.1/"
+    },
+    "starlette": {
+      "version": "0.46.2",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/starlette/0.46.2/"
+    },
+    "tqdm": {
+      "version": "4.67.1",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/tqdm/4.67.1/"
+    },
+    "typer": {
+      "version": "0.16.0",
+      "transitive": false,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/typer/0.16.0/"
+    },
+    "typing-inspection": {
+      "version": "0.4.1",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/typing-inspection/0.4.1/"
+    },
+    "typing_extensions": {
+      "version": "4.14.1",
+      "transitive": true,
+      "source": "pypi",
+      "resolved": "https://pypi.org/project/typing_extensions/4.14.1/"
+    }
+  },
+  "models": {
+    "openai:gpt-4": {
+      "provider": "openai",
+      "id": "gpt-4",
+      "version": "4.0.0",
+      "context": "8k"
+    }
+  },
+  "env": {
+    "default": "dev",
+    "environments": {
+      "dev": {
+        "PYTHON_ENV": "development"
+      },
+      "prod": {
+        "PYTHON_ENV": "production"
+      }
+    }
+  },
+  "meta": {
+    "generated_at": "2025-07-08T12:09:24.258965Z",
+    "platform": "macOS-15.3.1-arm64-arm-64bit",
+    "python": "3.12.7",
+    "pylock_version": "0.1.3"
+  }
+}

@@ -12,7 +12,7 @@ DEFAULT_CONFIG = {
     "description": "An AI-ready FastAPI backend",
     "entry": "app.py",
     "scripts": {
-        "dev": "pylock run app.py"
+        "dev": "pulumuu run app.py"
     },
     "dependencies": {
         "fastapi": "^0.110.0",
@@ -43,15 +43,15 @@ DEFAULT_CONFIG = {
 }
 
 def main():
-    path = Path("py.json")
+    path = Path("pulumuu.json")
     if path.exists():
-        console.print("[bold red]py.json already exists.[/bold red]")
+        console.print("[bold red]pulumuu.json already exists.[/bold red]")
         return
 
     try:
         config = PyConfig(**DEFAULT_CONFIG)
         with open(path, "w") as f:
             json.dump(config.dict(), f, indent=2)
-        console.print("[bold green]✨ py.json has been created.[/bold green]")
+        console.print("[bold green]✨ pulumuu.json has been created.[/bold green]")
     except Exception as e:
-        console.print(f"[bold red]Failed to generate py.json:[/bold red] {e}")
+        console.print(f"[bold red]Failed to generate pulumuu.json:[/bold red] {e}")

@@ -1,6 +1,6 @@
 # cli.py
 import typer
-from commands import init, install, run, add, remove
+from commands import init, install, run, add, remove,diff
 
 app = typer.Typer()
 
@@ -8,7 +8,7 @@ app.command(name="init")(init.main)
 app.command(name="install")(install.main)
 app.command(name="add")(add.main)
 app.command(name="remove")(remove.main)
-
+app.command(name="diff")(diff.main)
 app.command(name="run")(run.main)
 
 if __name__ == "__main__":
